@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header.cabeza {
+    background-image: url('img/fondo\ 1.1.jpeg');
+    background-size: cover;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    padding: 0px;
+    text-align: center;
+}
+
+.cabeza h1 {
+    font-size: 5em;
+}
+.logo{
+    background-color: rgba(255, 255, 255, 0.484);
+    width: 50%;
+    height: 5%;
+    color: #333;
+    display: inline;
+    border-radius: 50px;
+    height: 100%;
+}
+
+.cabeza .introduccion {
+height: 20px;
+}
+
+.parabola {
+    height: 50px;
+    background: linear-gradient(to bottom, white 50%, #f0f0f0 50%);
+    clip-path: ellipse(50% 50% at 50% 100%);
+}
+
+.tronco {
+    background-color: #f0f0f0;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.img{
+    width: 20%;
+    height: 20%;
+    border-radius: 20%;
+}
+
+.mision-vision {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.mision, .vision {
+    width: 45%;
+}
+
+.servicios{
+    text-align: center;
+}
+
+.servicios ul, .objetivos-especificos ul {
+    list-style: none;
+    text-align: center;
+}
+
+.servicios ul li, .objetivos-especificos ul li {
+    margin: 15px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.servicios ul li p, .objetivos-especificos ul li p {
+    display: none;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.servicios ul li span, .objetivos-especificos ul li span {
+    font-weight: bold;
+    text-align: center;
+}
+
+.servicios ul li:hover p, .objetivos-especificos ul li:hover p {
+    display: block;
+    text-align: center;
+}
+
+.valores{
+    text-align: center;
+}
+.valores ul, .valores ul {
+    list-style: none;
+    text-align: center;
+}
+
+.valores ul li, .valores ul li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.valores ul li p, .valores ul li p {
+    display: none;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.valores ul li span, .valores ul li span {
+    font-weight: bold;
+}
+
+.valores ul li:hover p, .valores ul li:hover p {
+    display: block;
+}
+.presupuestos {
+    text-align: center; /* Esto ya está */
+    display: flex; /* Añadir flexbox */
+    flex-direction: column; /* Alinear contenido verticalmente */
+    justify-content: center; /* Centrar el contenido verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    margin: 20px 0; /* Añadir margen superior e inferior */
+}
+
+.presupuestos .img-presupuesto {
+    width: 250px;
+    height: 180px;
+    background-color: #ccc;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Centrar el contenido dentro del contenedor de la imagen */
+    align-items: center;
+}
+
+
+.objetivos-generales, .objetivos-especificos {
+    text-align: center;
+}
+
+footer.pie {
+    background-color: #333;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.pie .img-equipo {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 0 auto 20px;
+}
