@@ -14,25 +14,24 @@ header.cabeza {
     color: white;
     width: 100%;
     height: 50vh;
-    padding: 0px;
+    padding: 0;
     text-align: center;
 }
 
 .cabeza h1 {
     font-size: 5em;
 }
-.logo{
+
+.logo {
     background-color: rgba(255, 255, 255, 0.484);
     width: 50%;
-    height: 5%;
     color: #333;
-    display: inline;
+    display: inline-block;
     border-radius: 50px;
-    height: 100%;
 }
 
 .cabeza .introduccion {
-height: 20px;
+    height: 20px;
 }
 
 .parabola {
@@ -49,9 +48,9 @@ height: 20px;
     gap: 50px;
 }
 
-.img{
+.img {
     width: 20%;
-    height: 20%;
+    height: auto; /* Cambiado para mantener la proporción */
     border-radius: 20%;
 }
 
@@ -65,7 +64,7 @@ height: 20px;
     width: 45%;
 }
 
-.servicios{
+.servicios {
     text-align: center;
 }
 
@@ -89,47 +88,47 @@ height: 20px;
 
 .servicios ul li span, .objetivos-especificos ul li span {
     font-weight: bold;
-    text-align: center;
 }
 
 .servicios ul li:hover p, .objetivos-especificos ul li:hover p {
     display: block;
+}
+
+.valores {
     text-align: center;
 }
 
-.valores{
-    text-align: center;
-}
-.valores ul, .valores ul {
+.valores ul {
     list-style: none;
     text-align: center;
 }
 
-.valores ul li, .valores ul li {
+.valores ul li {
     margin: 15px 0;
     cursor: pointer;
 }
 
-.valores ul li p, .valores ul li p {
+.valores ul li p {
     display: none;
     font-size: 0.9em;
     margin-top: 5px;
 }
 
-.valores ul li span, .valores ul li span {
+.valores ul li span {
     font-weight: bold;
 }
 
-.valores ul li:hover p, .valores ul li:hover p {
+.valores ul li:hover p {
     display: block;
 }
+
 .presupuestos {
-    text-align: center; /* Esto ya está */
-    display: flex; /* Añadir flexbox */
-    flex-direction: column; /* Alinear contenido verticalmente */
-    justify-content: center; /* Centrar el contenido verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    margin: 20px 0; /* Añadir margen superior e inferior */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
 }
 
 .presupuestos .img-presupuesto {
@@ -138,10 +137,9 @@ height: 20px;
     background-color: #ccc;
     margin-top: 10px;
     display: flex;
-    justify-content: center; /* Centrar el contenido dentro del contenedor de la imagen */
+    justify-content: center;
     align-items: center;
 }
-
 
 .objetivos-generales, .objetivos-especificos {
     text-align: center;
@@ -159,4 +157,54 @@ footer.pie {
     height: 100px;
     background-color: #ccc;
     margin: 0 auto 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .cabeza h1 {
+        font-size: 3em;
+    }
+
+    .tronco {
+        padding: 20px;
+    }
+
+    .img {
+        width: 50%; /* Aumentar el tamaño en pantallas más pequeñas */
+    }
+
+    .mision-vision {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center;
+    }
+
+    .mision, .vision {
+        width: 100%; /* Ocupa el 100% del ancho */
+    }
+
+    .servicios ul li {
+        font-size: 0.9em; /* Ajustar tamaño de fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .cabeza h1 {
+        font-size: 2em;
+    }
+
+    .tronco {
+        padding: 10px;
+    }
+
+    .img {
+        width: 80%; /* Mayor tamaño en pantallas pequeñas */
+    }
+
+    .servicios ul li {
+        font-size: 0.8em; /* Ajustar aún más */
+    }
+
+    footer.pie {
+        padding: 30px; /* Ajustar padding en pie */
+    }
 }
