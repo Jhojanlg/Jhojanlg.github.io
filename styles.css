@@ -49,8 +49,8 @@ header.cabeza {
 }
 
 .img {
-    width: 20%;
-    height: auto; /* Cambiado para mantener la proporción */
+    width: 100%; /* Cambiado para que ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción */
     border-radius: 20%;
 }
 
@@ -68,57 +68,28 @@ header.cabeza {
     text-align: center;
 }
 
-.servicios ul, .objetivos-especificos ul {
+.servicios ul, .objetivos-especificos ul, .valores ul {
     list-style: none;
     text-align: center;
 }
 
-.servicios ul li, .objetivos-especificos ul li {
+.servicios ul li, .objetivos-especificos ul li, .valores ul li {
     margin: 15px 0;
     cursor: pointer;
-    text-align: center;
 }
 
-.servicios ul li p, .objetivos-especificos ul li p {
+.servicios ul li p, .objetivos-especificos ul li p, .valores ul li p {
     display: none;
     text-align: center;
     font-size: 0.9em;
     margin-top: 5px;
 }
 
-.servicios ul li span, .objetivos-especificos ul li span {
+.servicios ul li span, .objetivos-especificos ul li span, .valores ul li span {
     font-weight: bold;
 }
 
-.servicios ul li:hover p, .objetivos-especificos ul li:hover p {
-    display: block;
-}
-
-.valores {
-    text-align: center;
-}
-
-.valores ul {
-    list-style: none;
-    text-align: center;
-}
-
-.valores ul li {
-    margin: 15px 0;
-    cursor: pointer;
-}
-
-.valores ul li p {
-    display: none;
-    font-size: 0.9em;
-    margin-top: 5px;
-}
-
-.valores ul li span {
-    font-weight: bold;
-}
-
-.valores ul li:hover p {
+.servicios ul li:hover p, .objetivos-especificos ul li:hover p, .valores ul li:hover p {
     display: block;
 }
 
@@ -133,7 +104,7 @@ header.cabeza {
 
 .presupuestos .img-presupuesto {
     width: 250px;
-    height: 180px;
+    height: auto; /* Mantiene proporción */
     background-color: #ccc;
     margin-top: 10px;
     display: flex;
@@ -170,7 +141,7 @@ footer.pie {
     }
 
     .img {
-        width: 50%; /* Aumentar el tamaño en pantallas más pequeñas */
+        width: 80%; /* Ajusta el tamaño de las imágenes */
     }
 
     .mision-vision {
@@ -197,11 +168,7 @@ footer.pie {
     }
 
     .img {
-        width: 80%; /* Mayor tamaño en pantallas pequeñas */
-    }
-
-    .servicios ul li {
-        font-size: 0.8em; /* Ajustar aún más */
+        width: 90%; /* Aumenta el tamaño de las imágenes en pantallas pequeñas */
     }
 
     footer.pie {
